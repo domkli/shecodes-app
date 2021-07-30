@@ -1,0 +1,117 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+.border {
+  border-radius: 10px;
+  border: solid 1px #185adb;
+}
+.container {
+  background: #cee5d0;
+  
+}
+.weather-app {
+  max-width: 700px;
+}
+input.search {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #185adb;
+}
+.search-row {
+  padding-bottom: 1em !important;
+}
+.searchButton,
+.currentButton {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(129, 178, 154);
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.searchButton:hover{
+  background-color: #92a8d0;
+  color: blue;
+
+}
+
+.currentButton:hover{
+    background-color: #92a8d0;
+    color: blue;
+  
+}
+
+.send {
+  color: rgb(61, 64, 91);
+  font-size: 30px;
+}
+h1 {
+  color: rgb(61, 64, 91);
+}
+li {
+  font-size: 13px;
+  color: #333;
+}
+.condition-row {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}
+.forecast-row {
+  padding-top: 1em !important;
+  padding-bottom: 3em !important;
+  text-align: center;
+}
+.current-weather {
+  float: left;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-left: 15px;
+}
+.weather-img {
+  float: left;
+  width: 50%;
+  margin-right: 10px;
+}
+.week-weather {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.days {
+  color: #212529;
+  font-size: 20px;
+  text-align: center;
+}
+.forecast-temperature-max,
+.forecast-temperature-min {
+  font-size: 15px;
+  text-align: center;
+  line-height: 3;
+  font-weight: bold;
+}
+.forecast-temperature-max {
+  color: #333;
+}
+.forecast-temperature-min {
+  color: #666;
+}
+footer {
+  text-align: center;
+  padding-bottom: 3em;
+  color: grey;
+  font-size: small;
+}
+footer h6 {
+  color: rgb(224, 122, 95);
+  text-decoration: none;
+  font-weight: 500;
+}
+footer a:hover {
+  color: rgb(129, 178, 154);
+  cursor: pointer;
+  text-decoration: underline;
+}

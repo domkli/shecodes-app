@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App 🌡</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/4056446ca4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container w-50 mt-5 border shadow" style="border: solid 1px #185adb;">
+      <div class="weather-app">
+      <div class="row p-5 search-row" id="search-city">
+        <div class="col-8">
+          <form id="search-form">
+          <input
+            class="search"
+            type="search"
+            placeholder="Enter a city"
+            id="search-city-input"
+          />
+        </div>
+        <div class="col-2">
+        <input type="submit" value="Search" class="searchButton" id="search-button">
+        </div>
+        <div class="col-2">
+        <input type="submit" value="Current" class="currentButton" id="current-button">
+        </div>
+        </form>
+      </div>
+      <div class="row p-5 condition-row">
+        <div class="col-6">
+          <ul>
+            <li class="row humidity" id="humidity"></li>
+            <li class="row precipitation" id="precipitation"></li>
+            <li class="row wind" id="wind"></li>
+            <li class="row Description" id="description"></li>
+          </ul>
+        </div>
+        <div class="row">
+          <h5 class="city col-6" id="current-city"></h5>
+          <h5 class="date-time col-6" id="current-time" style="color:#de8971;font-weight: 600;"></h5>
+        </div>
+        <div class="col-6">
+          <h5 class="current-weather" id="current-temp"></h5>
+        </div>
+        <div class="col-6 clearfix">
+          <img class="weather-img" id="current-weather-icon" src="" alt=""/>
+        </div>
+      </div>
+      <div class="row p-5 forecast-row" id="weather-forecast">
+      
+      </div>
+      <footer>
+        <h6>👩🏼‍💻 Coded by Dominika Klim  🙋‍‍</h6>
+      </footer>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
